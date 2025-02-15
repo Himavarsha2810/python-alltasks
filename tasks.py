@@ -310,7 +310,58 @@ for i in arr1:
     if i<min:
         min=i
 print("maximum number is: ",max)
-print("minimum number is: ",min)
+print("minimum number is: ",min) 
+
+
+# compare first digit and last digit in a number  (print equal - if there are  equal )
+
+ef compare_first_last_digit(num):
+    str1 = str(num)
+    if str1[0] == str1[-1]:
+        print("Equal")
+    else:
+        print("Not equal")
+
+num = int(input("Enter a number: "))
+compare_first_last_digit(num)  
+
+
+# reverse of negative numbers 
+
+def reverse_number(n):
+    if n >= 0:
+        return int(str(n)[::-1])
+    else:
+        return -int(str(n)[:0:-1])
+
+num = int(input("Enter a number: "))
+print("Reversed number:", reverse_number(num))
+
+
+# search of number in list with their indexes if found 
+
+def search_a_num(list, search_num):
+    """Search for a number in the list and print its index."""
+    index = 0  
+    for num in list:
+        if num == search_num:
+            return index  
+        index += 1  
+    return -1  
+
+list = [2, 4, 6, 8, 10, 0.2, -3]
+search_num = float(input("Enter a number to search: "))  
+
+index = search_a_num(list, search_num)
+if index != -1:
+    print(f"Found at index {index}")
+else:
+    print("Not found")
+
+
+
+
+
 
 
 
