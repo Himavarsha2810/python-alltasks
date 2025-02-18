@@ -373,7 +373,7 @@
 
 #     return list(duplicates)
 
-# lst = [1, 2, 3, 4, 5, 2, 3, 6, 7, 8, 1]
+# lst = [1, 2, 3, 4, 5, 2, 3, 6, 7, 8, 
 # duplicates = find_duplicates(lst)
 
 # print("Duplicate elements:", duplicates) 
@@ -383,13 +383,100 @@
 # def unique_elements(lst):
 #     unique_list = []
 #     for item in lst:
+
+
 #         if item not in unique_list:
 #             unique_list.append(item)
 #     return unique_list
 
 
 # lst = [1, 2, 2, 3, 4, 4, 5]
-# print(unique_elements(lst))  
+# print(unique_elements(lst))   
+
+
+
+# 17 - 02 -task 
+
+#Arrays/Lists Questions:
+# 1. Sum of elements in a List.
+
+# def sum_of_elements(lst):
+#     sum = 0
+#     for num in lst:
+#         sum += num
+#     return sum
+
+# my_list = [11, 25, 43, 64, 15]
+# result = sum_of_elements(my_list)
+# print("The sum of elements in the list is:", result) 
+
+
+# 2 .Finding the k Element which is present in a List.
+
+# def find_kth_element(list, k):
+#     if k < 0 or k >= len(list):
+#         return "Index out of range"
+#     return list[k]
+
+# my_list = [10, 20, 30, 40, 50]
+# k = 2
+# result = find_kth_element(my_list, k)
+# print(f"The {k}th element in the list is:", result) 
+
+
+# reverse an array 
+
+# def rev_array(arr):
+#     return arr[::-1]
+
+# my_array = [21, 12, 43, 34, 55]
+# rev_array = rev_array(my_array)
+# print("The reversed array is:", rev_array) 
+
+#12) Find Largest & Smallest element in an list.  
+
+# list1=[2,5,3,4,8,9,6,1]
+# large=list1[0]
+# small=list1[0]
+# for i in list1:
+#     if i>large:
+#         large=i
+# for i in list1:
+#     if i<small:
+#         small=i
+
+# print("maximum number is: ",large)
+# print("minimum number is: ",small)  
+
+
+#3) Wap to print duplicates and unique numbers in an array/List.
+
+# def find_duplicates(lst):
+#     duplicates = set()
+#     seen = set()
+
+#     for item in lst:
+#         if item in seen:
+#             duplicates.add(item)
+#         else:
+#             seen.add(item)
+
+#     return list(duplicates)
+
+# lst = [1, 2, 3, 4, 5, 2, 3, 6, 7, 8,5,10]
+# duplicates = find_duplicates(lst)
+
+# print("Duplicate elements:", duplicates) 
+
+
+
+
+
+
+
+
+
+
 
 
 
