@@ -470,6 +470,88 @@
 
 
 
+# 18-02 task 
+# 17 , 8 , 19 , 20  
+
+
+# 8 
+
+# Input list
+# my_list = [568, 89, 112, 88, 571]
+
+# incr_list = []
+
+# for num in my_list:
+#     digits = my_list(str(num))
+#     if digits == sorted(digits):
+#         incr_list.append(True)
+#     else:
+#         incr_list.append(False)
+
+# print(incr_list)  # Output: [True, True, False, False, False]  
+
+# 19 subset of 2 arrays 
+
+
+# # arr1 = [1,3,4,5,2]
+# # arr2 = [2,4,3,1,7.5,15] 
+# arr1 = [2, 21, 5, 7, 3, 5, 7, 3, 1, 6, 14, 44]
+# arr2 = [7, 3, 1]
+
+# array1 = set(arr1)
+# array2 = set(arr2)
+# def check_subset(arr1, arr2):
+#     for element in array2:
+#         if element  in array1:
+#             return "arr1 is  subset of arr2 "
+#     return "arr1 is not a subset of arr2" 
+
+# print(check_subset(arr1, arr2)) 
+
+
+# 17 
+
+# arr1 = [10, 30, 10, 20, 10, 20, 30, 10] 
+
+# freq_res = []
+
+# res = {}
+# for element in arr1:
+#     if element in res:
+#         res[element] += 1
+#     else:
+#         res[element] = 1 
+
+# freq_res.append(res)
+
+# print(freq_res)   
+
+# 20      count pairs 
+
+# def check_pairs(arr):
+#     res = {}
+
+#     for element in arr:
+#         if element in res:
+#             res[element] += 1
+#         else:
+#             res[element] = 1 
+
+#     pairs = 0 
+
+#     for count in res.values():
+#         pairs += count // 2 
+#     return pairs 
+
+# arr1 = [10, 20, 10, 30, 20, 20] 
+# arr2 = [30, 50, 30, 50, 20, 50, 50, 20, 50, 50]
+# print(check_pairs(arr1))
+# print(check_pairs(arr2))
+
+
+
+
+
 
 
 
