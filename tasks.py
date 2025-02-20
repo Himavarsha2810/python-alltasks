@@ -546,7 +546,43 @@
 # arr1 = [10, 20, 10, 30, 20, 20] 
 # arr2 = [30, 50, 30, 50, 20, 50, 50, 20, 50, 50]
 # print(check_pairs(arr1))
-# print(check_pairs(arr2))
+# print(check_pairs(arr2)) 
+
+
+# 2D matrix -3 
+
+
+# matrix = [
+#     [2, 3, 4],
+#     [3, 9, 2],
+#     [3, 4, 1],
+# ]
+
+# sum_of_diagonals = [2, 9, 1, 4, 3]
+# total_sum = sum(sum_of_diagonals)
+# print(total_sum)  
+
+
+
+# 5 count of digits 
+
+# number = 2788
+# number_str = str(number)
+# count_digit = {}
+
+# for digit in number_str:
+#     if digit in count_digit:
+#         count_digit[digit] += 1
+#     else:
+#         count_digit[digit] = 1
+
+# for digit, count in count_digit.items():
+#     print(count) 
+
+
+
+
+
 
 
 
