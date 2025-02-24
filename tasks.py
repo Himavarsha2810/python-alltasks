@@ -577,7 +577,80 @@
 #         count_digit[digit] = 1
 
 # for digit, count in count_digit.items():
-#     print(count) 
+#     print(count)  
+
+
+
+# matrixes 
+# 4 - print 2 diagonals of    8 1 3  , 4 2 9 , 3 1 5 
+
+# matrix = [[8 ,1,3],[4,2,9],[3,1,5]]
+
+
+# for i in range(len(matrix)):
+#     for j in range(len(matrix)):
+#         if i == j:
+#             print(matrix[i][j],end = " ")
+#     print() 
+
+
+
+
+# Mul and division using recursion
+
+def multiple(p,q):
+    if q == 0:
+        return 0
+    if q > 0:
+      return p + multiple (p , q - 1)
+    else:
+       return multiple(p, -q)
+print(multiple(4,5))
+
+def division(a,b):
+   if a == 0:
+      return 0
+   if a < b:
+      return 0
+   return 1 + division(a - b, b)
+print(division(15, 5))
+
+# Printing 1 to n numbers without multiple print statements and loops
+
+def natural_number(num,num1 =1):
+    if num1 > num:
+        return 
+    print(num1, end = " ")
+    natural_number(num,num1 + 1)
+natural_number(20)
+
+# Sum of first n natural numbers using recursion
+
+def natural_numbers_sum(num):
+    sum = 0
+    for i in range(1,num + 1):
+        sum += i
+    return sum
+print(natural_numbers_sum(30))
+
+def natural_numbers_sum(n):
+     if n == 0:  
+        return 0
+     return n + natural_numbers_sum(n - 1)
+print(natural_numbers_sum(20))
+
+# Printing a list in reverse order using recursion
+
+def print_reverse(lst, index=None):
+    if index is None:
+        index = len(lst) - 1  
+    if index < 0:  
+        return
+    print(lst[index], end=" ") 
+    print_reverse(lst, index - 1)  
+my_list = [6,7,8,9,10]
+print_reverse(my_list)               
+                            
 
 
 
